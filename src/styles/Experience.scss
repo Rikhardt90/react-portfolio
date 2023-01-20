@@ -1,0 +1,30 @@
+@import "./mixins";
+
+.experience-div {
+  .exp-card {
+    @include flexCenter(column, center, center);
+    margin: 50px;
+    .experience-img {
+      height: 500px;
+      border: solid 1px orange;
+      border-radius: 30px;
+      margin-bottom: 20px;
+    }
+    .name {
+      color: whitesmoke;
+      font-size: 30px;
+    }
+    .where {
+      color: whitesmoke;
+      font-size: 20px;
+    }
+    .date {
+      color: whitesmoke;
+      font-size: 15px;
+    }
+    .description {
+      color: whitesmoke;
+      font-size: 20px;
+    }
+  }
+}

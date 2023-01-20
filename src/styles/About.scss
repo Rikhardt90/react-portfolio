@@ -1,0 +1,30 @@
+@import "./mixins";
+
+#about{
+    @include flexCenter(column, center, center);
+    height: 100vh;
+    flex-direction: row;
+    background-color: rgb(20, 20, 20);
+    .about-text{
+        width: 40%;
+        h2{
+            font-size: 30px;
+            color: white;
+            margin-left: 10px;
+        }
+        p{
+            color: rgb(255, 196, 0);
+            font-size: 40px;
+            margin-top: 30px;
+        }
+    }
+    .about-img{
+   
+        margin-left: 100px;
+        img{
+            height: 400px;
+            border: 1px solid orange;
+            border-radius: 20px;
+        }
+    }
+}

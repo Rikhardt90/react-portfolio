@@ -1,0 +1,26 @@
+@import "./mixins";
+
+#contact {
+  background-color: rgb(20, 20, 20);
+  @include flexCenter(row, space-around, center);
+  height: 100vh;
+
+  .contact-div--left {
+    .contact-card {
+      @include flexCenter(row, left, center);
+      font-size: 30px;
+      color: rgb(255, 166, 0);
+      a {
+        text-decoration: none;
+        margin-left: 30px;
+      }
+    }
+  }
+  .contact-div--right {
+    img {
+      height: 500px;
+      border-radius: 30px;
+      border: solid 1px orange;
+    }
+  }
+}
