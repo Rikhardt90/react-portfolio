@@ -21,6 +21,7 @@
     .buttons-div {
       @include flexCenter(row, space-around, center);
         margin-top: 10px;
+
       
       button {
       font-size: 20px;
