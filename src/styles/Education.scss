@@ -1,6 +1,7 @@
 @import "./mixins";
 
 .education-div {
+  width: 100vw;
   .edu-card {
     @include flexCenter(column, center, center);
     margin: 50px;

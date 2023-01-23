@@ -1,9 +1,11 @@
 import React from "react";
 import "../styles/Home.scss";
 
+
 const Home = () => {
   return (
     <div id="home">
+   
       <h1>Hi, my name is</h1>
       <h2>Ricardo Mera Ciudad</h2>
       <h3>
@@ -19,6 +21,7 @@ const Home = () => {
           Check out my Github page
         </a>
       </div>
+  
     </div>
   );
 };

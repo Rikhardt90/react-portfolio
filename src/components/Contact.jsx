@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/Contact.scss";
-//import { Fade } from "react-awesome-reveal";
+
 
 const Contact = ({ contact }) => {
   return (
     <div id="contact">
-      {/* <Fade delay={200} triggerOnce="true"> */}
+
         <div className="contact-div--left">
         
 
@@ -25,12 +25,11 @@ const Contact = ({ contact }) => {
             <p>Social:</p> <a href="https://www.facebook.com/ricardo.meraciudad">Facebook</a><a href="https://www.instagram.com/rikhardt90">Instagram</a>
           </div>
         </div>
-      {/* </Fade> */}
-      {/* <Fade delay={200} triggerOnce="true"> */}
+
         <div className="contact-div--right">
           <img src={contact.contactImage} alt="" />
         </div>
-      {/* </Fade> */}
+  
     </div> 
   );
 };

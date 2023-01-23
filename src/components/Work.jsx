@@ -4,6 +4,7 @@ import Experience from "./Experience.jsx";
 import { useState } from "react";
 import "../styles/Work.scss";
 
+
 const Work = ({ education, experience }) => {
   const [showEducation, setShowEducation] = useState(true);
 
