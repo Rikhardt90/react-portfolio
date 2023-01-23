@@ -37,7 +37,7 @@ export const CV = {
       },
       {
         id: 2,
-        img: "https://res.cloudinary.com/dbamkolrf/image/upload/v1674214686/React-portfolio/FP_t1blj0.jpg",
+        img: "https://res.cloudinary.com/dbamkolrf/image/upload/v1674481257/React-portfolio/robo_wyecrc.jpg",
         name: "Automatization & Robotics",
         date: "2017",
         where: "IES Julio Verne",

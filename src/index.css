@@ -6,6 +6,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+html{
+  width: 100vw;
+  overflow-x: hidden; 
+}
+
 body {
   background-image: url(https://res.cloudinary.com/dbamkolrf/image/upload/v1669369927/React-portfolio/milky-way-above-trees-and-sand-dunes_h2hjwb.jpg);
   background-attachment: fixed;

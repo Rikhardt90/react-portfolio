@@ -1,31 +1,119 @@
 @import "./mixins";
 
-.education-div {
-  width: 100vw;
-  .edu-card {
+//Mobile
+@media (min-width: 100px) and (max-width: 424px) {
+  .education-div {
     @include flexCenter(column, center, center);
-    margin: 50px;
-    .education-img {
-      height: 500px;
-      border: solid 1px orange;
-      border-radius: 30px;
-      margin-bottom: 20px;
+    .edu-card {
+      @include flexCenter(column, center, center);
+      margin-top: 50px;
+      padding: 10px 30px 10px 30px;
+      background-color: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      .education-img {
+        height: 200px;
+        border: solid 3px orange;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      .name {
+        color: whitesmoke;
+        font-size: 10px;
+      }
+      .where {
+        color: whitesmoke;
+        font-size: 10px;
+      }
+      .date {
+        color: whitesmoke;
+        font-size: 10px;
+      }
+      .description {
+        color: whitesmoke;
+        font-size: 10px;
+        text-align: center;
+      }
     }
-    .name {
-      color: whitesmoke;
-      font-size: 30px;
+  }
+}
+
+//Tablet
+@media (min-width: 425px) and (max-width: 1023px) {
+  .education-div {
+    @include flexCenter(column, center, center);
+    .edu-card {
+      @include flexCenter(column, center, center);
+      margin-top: 50px;
+      padding: 10px 30px 10px 30px;
+      background-color: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      .education-img {
+        height: 200px;
+        border: solid 3px orange;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      .name {
+        color: whitesmoke;
+        font-size: 30px;
+      }
+      .where {
+        color: whitesmoke;
+        font-size: 20px;
+      }
+      .date {
+        color: whitesmoke;
+        font-size: 15px;
+      }
+      .description {
+        color: whitesmoke;
+        font-size: 20px;
+        width: 60vw;
+        text-align: center;
+      }
     }
-    .where {
-      color: whitesmoke;
-      font-size: 20px;
-    }
-    .date {
-      color: whitesmoke;
-      font-size: 15px;
-    }
-    .description {
-      color: whitesmoke;
-      font-size: 20px;
+  }
+}
+
+//Desktop
+@media (min-width: 1024px) {
+  .education-div {
+    @include flexCenter(column, center, center);
+    .edu-card {
+      @include flexCenter(column, center, center);
+      margin-top: 50px;
+      padding: 20px 30px 10px 30px;
+      background-color: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      .education-img {
+        height: 500px;
+        border: solid 3px orange;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      .name {
+        color: whitesmoke;
+        font-size: 30px;
+      }
+      .where {
+        color: whitesmoke;
+        font-size: 20px;
+      }
+      .date {
+        color: whitesmoke;
+        font-size: 15px;
+      }
+      .description {
+        color: whitesmoke;
+        font-size: 20px;
+        text-align: center;
+      }
     }
   }
 }

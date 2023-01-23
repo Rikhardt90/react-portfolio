@@ -34,22 +34,22 @@ const Navbar = () => {
           <ul>
             <li>
               <Link activeClass="active" smooth spy to="home">
-                HOME
+                Home
               </Link>
             </li>
             <li>
               <Link activeClass="active" smooth spy to="about">
-                ABOUT
+                About me
               </Link>
             </li>
             <li>
               <Link activeClass="active" smooth spy to="work">
-                WORK
+                Work
               </Link>
             </li>
             <li>
               <Link activeClass="active" smooth spy to="contact">
-                CONTACT ME
+                Contact
               </Link>
             </li>
           </ul>

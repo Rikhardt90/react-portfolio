@@ -1,29 +1,156 @@
 @import "./mixins";
 
-#about{
-    @include flexCenter(row, center, center);
+//Mobile
+@media (min-width: 100px) and (max-width: 424px) {
+  #about {
+    @include flexCenter(column, flex-start, left);
     height: 100vh;
-    background-color: rgb(20, 20, 20);
-    .about-text{
+    background-image: linear-gradient(
+      rgb(20, 20, 20, 0),
+      rgb(20, 20, 20, 0.8),
+      rgb(20, 20, 20, 1),
+      rgb(20, 20, 20, 1),
+      rgb(20, 20, 20, 0.8),
+      rgb(20, 20, 20, 0)
+    );
+    .about-header {
+      h2 {
+        font-size: 20px;
+        padding: 30px 50px;
+        color: whitesmoke;
+        span {
+          color: orange;
+        }
+      }
+    }
+    .about-info {
+      @include flexCenter(column, center, left);
+      margin-top: 10vh;
+      .about-text {
+        padding: 20px;
+        h2 {
+          font-size: 20px;
+          color: orange;
+          margin-left: 10px;
+        }
+        p {
+          color: whitesmoke;
+          font-size: 20px;
+          margin-top: 30px;
+        }
+      }
+      .about-img {
+        @include flexCenter(column, center, center);
+        img {
+          height: 200px;
+          padding: 10px;
+          border: 3px solid orange;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+//Tablet
+@media (min-width: 425px) and (max-width: 1023px) {
+  #about {
+    @include flexCenter(column, flex-start, left);
+    height: 100vh;
+    background-image: linear-gradient(
+      rgb(20, 20, 20, 0),
+      rgb(20, 20, 20, 0.8),
+      rgb(20, 20, 20, 1),
+      rgb(20, 20, 20, 1),
+      rgb(20, 20, 20, 0.8),
+      rgb(20, 20, 20, 0)
+    );
+    .about-header {
+      margin-top: 8vh;
+      h2 {
+        font-size: 20px;
+        padding: 30px 50px;
+        color: whitesmoke;
+        span {
+          color: orange;
+        }
+      }
+    }
+    .about-info {
+      @include flexCenter(row, space-around, center);
+      margin-top: 10vh;
+      .about-text {
         width: 40%;
-        h2{
-            font-size: 30px;
-            color: white;
-            margin-left: 10px;
+        h2 {
+          font-size: 20px;
+          color: orange;
+          margin-left: 10px;
         }
-        p{
-            color: rgb(255, 196, 0);
-            font-size: 40px;
-            margin-top: 30px;
+        p {
+          color: whitesmoke;
+          font-size: 20px;
+          margin-top: 30px;
         }
+      }
+      .about-img {
+        img {
+          height: 250px;
+          padding: 10px;
+          border: 3px solid orange;
+          border-radius: 50%;
+        }
+      }
     }
-    .about-img{
-   
-        margin-left: 100px;
-        img{
-            height: 400px;
-            border: 1px solid orange;
-            border-radius: 20px;
+  }
+}
+//Desktop
+@media (min-width: 1024px) {
+  #about {
+    @include flexCenter(column, flex-start, left);
+    height: 100vh;
+    background-image: linear-gradient(
+      rgb(20, 20, 20, 0),
+      rgb(20, 20, 20, 0.8),
+      rgb(20, 20, 20, 1),
+      rgb(20, 20, 20, 1),
+      rgb(20, 20, 20, 0.8),
+      rgb(20, 20, 20, 0)
+    );
+    //background-color: rgb(20, 20, 20);
+    .about-header {
+      h2 {
+        font-size: 20px;
+        margin-top: 8vh;
+        padding: 30px 50px;
+        color: whitesmoke;
+        span {
+          color: orange;
         }
+      }
     }
+    .about-info {
+      @include flexCenter(row, space-evenly, center);
+      padding-top: 10vh;
+      .about-text {
+        width: 40%;
+        h2 {
+          font-size: 20px;
+          color: orange;
+          margin-left: 10px;
+        }
+        p {
+          color: whitesmoke;
+          font-size: 20px;
+          margin-top: 30px;
+        }
+      }
+      .about-img {
+        img {
+          height: 350px;
+          padding: 10px;
+          border: 3px solid orange;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }

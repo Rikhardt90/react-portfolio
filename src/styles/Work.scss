@@ -1,27 +1,40 @@
 @import "./mixins";
 
-#work{
-    width: 100vw;
-    @include flexCenter(column, top, center);
+#work {
+  width: 100vw;
+  padding-bottom: 10%;
+  @include flexCenter(column, center, left);
 
-
-    .buttons-div{
-        @include flexCenter(row, space-around, center);
-
-        margin-top: 8%;
-        button{
-            background-color: gray; 
-            border: solid 2px whitesmoke;
-            border-radius: 10px;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-        }
+  .work-title {
+    h2 {
+      font-size: 20px;
+      margin-top: 8vh;
+      padding: 30px 50px;
+      color: whitesmoke;
+      span {
+        color: orange;
+      }
     }
-    .exp-edu-div{
-        margin-top: 30px;
+  }
+  .work-info {
+
+    .buttons-div {
+      @include flexCenter(row, space-around, center);
+        margin-top: 10px;
+      
+      button {
+      font-size: 20px;
+      background-color: #433e5e;
+      border: solid 1px whitesmoke;
+      border-radius: 10px;
+      color: white;
+      padding: 14px 25px;
+      text-align: left;
+      text-decoration: none;
+      }
     }
+    .exp-edu-div {
+      margin-top: 30px;
+    }
+  }
 }
