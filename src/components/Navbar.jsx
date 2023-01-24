@@ -7,7 +7,7 @@ const Navbar = () => {
   const [navSize, setnavSize] = useState("10rem");
   const [navColor, setnavColor] = useState("transparent");
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("#000000") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavColor("rgb(35, 0, 65)") : setnavColor("transparent");
     window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
   };
   useEffect(() => {

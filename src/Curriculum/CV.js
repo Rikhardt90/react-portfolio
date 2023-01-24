@@ -45,11 +45,11 @@ export const CV = {
       },
       {
         id: 3,
-        img: "https://res.cloudinary.com/dbamkolrf/image/upload/v1674213221/React-portfolio/ignis_uqi7ft.jpg",
-        name: "Music",
-        date: "1994",
-        where: "Various schools",
-        description: "From classical to metal, all kinds of instruments. Lead guitar in Ignis Anima",
+        img: "https://res.cloudinary.com/dbamkolrf/image/upload/v1674575183/React-portfolio/Obijuan2_twykp4.png",
+        name: "3D design (CAD & Artistic)",
+        date: "2020",
+        where: "Self taught",
+        description: "CAD design for printing or laser-cutting. I also learn some Blender and made my own miniatures for hobby!",
       },
     ],
     experience: [

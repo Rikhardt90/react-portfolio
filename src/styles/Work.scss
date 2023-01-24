@@ -17,21 +17,60 @@
     }
   }
   .work-info {
-
     .buttons-div {
       @include flexCenter(row, space-around, center);
-        margin-top: 10px;
+      margin-top: 10px;
 
-      
-      button {
-      font-size: 20px;
-      background-color: #433e5e;
-      border: solid 1px whitesmoke;
-      border-radius: 10px;
-      color: white;
-      padding: 14px 25px;
-      text-align: left;
-      text-decoration: none;
+      @media (min-width: 100px) and (max-width: 424px) {
+        //Mobile
+        button {
+          font-size: 10px;
+          background-color: rgba(0, 0, 0, 0.3);
+          backdrop-filter: blur(15px);
+          border: solid 1px whitesmoke;
+          border-radius: 10px;
+          color: white;
+          padding: 14px 25px;
+          text-align: left;
+          text-decoration: none;
+        }
+        button:hover {
+          background-color: rgb(35, 0, 65);
+        }
+      }
+
+      //Tablet
+      @media (min-width: 425px) and (max-width: 1023px) {
+        button {
+          font-size: 20px;
+          background-color: #433e5e;
+          border: solid 1px whitesmoke;
+          border-radius: 10px;
+          color: white;
+          padding: 14px 25px;
+          text-align: left;
+          text-decoration: none;
+        }
+        button:hover {
+          background-color: rgb(35, 0, 65);
+        }
+      }
+
+      //Desktop
+      @media (min-width: 1024px) {
+        button {
+          font-size: 20px;
+          background-color: #433e5e;
+          border: solid 1px whitesmoke;
+          border-radius: 10px;
+          color: white;
+          padding: 14px 25px;
+          text-align: left;
+          text-decoration: none;
+        }
+        button:hover {
+          background-color: rgb(35, 0, 65);
+        }
       }
     }
     .exp-edu-div {

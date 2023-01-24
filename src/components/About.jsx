@@ -29,6 +29,23 @@ const About = () => {
           </p>
         </div>
       </div>
+      <div className="about-bottom">
+        <h3>
+          Here are some of the technologies I’ve been working with recently:
+        </h3>
+        <div className="bottom-list">
+          <ul>
+            <li>HTML, CSS & Javascript</li>
+            <li>React</li>
+            <li>Node.js</li>
+          </ul>
+          <ul>
+            <li>Typescript</li>
+            <li>Sass & GD</li>
+            <li>Wordpress</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
