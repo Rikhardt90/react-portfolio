@@ -3,8 +3,7 @@
 //Mobile
 @media (min-width: 100px) and (max-width: 424px) {
   #about {
-    @include flexCenter(column, flex-start, left);
-    height: 100vh;
+    @include flexCenter(column, center, left);
     background-image: linear-gradient(
       rgb(20, 20, 20, 0),
       rgb(20, 20, 20, 0.8),
@@ -79,7 +78,6 @@
 @media (min-width: 425px) and (max-width: 1023px) {
   #about {
     @include flexCenter(column, flex-start, left);
-    height: 120vh;
     background-image: linear-gradient(
       rgb(20, 20, 20, 0),
       rgb(20, 20, 20, 0.8),
