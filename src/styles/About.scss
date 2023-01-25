@@ -52,7 +52,7 @@
     .about-bottom {
       @include flexCenter(column, center, center);
       text-align: center;
-      margin-top: 30px;
+      margin-top: 50px;
 
 
       h3 {
@@ -62,10 +62,12 @@
       }
       .bottom-list {
         @include flexCenter(row, space-between, center);
+        
       }
       ul {
         margin: 30px 30px;
         li {
+          text-align: left;
           color: whitesmoke;
           margin-top: 5px;
           font-size: 10px;
@@ -125,7 +127,7 @@
     .about-bottom {
       @include flexCenter(column, center, center);
       text-align: center;
-      margin-top: 20px;
+      margin-top: 60px;
       h3 {
         font-size: 20px;
         color: orange;
@@ -138,6 +140,7 @@
         margin: 10px 20px;
         li {
           color: whitesmoke;
+          text-align: left;
           margin-top: 10px;
           font-size: 15px;
         }
@@ -209,6 +212,7 @@
       ul {
         margin: 30px 30px;
         li {
+          text-align: left;
           color: whitesmoke;
           margin-top: 10px;
         }
